@@ -5,6 +5,12 @@
     },
     {
       "pattern": "^file://"
+    },
+    {
+      "pattern": "^\\.\\.\\.$"
+    },
+    {
+      "pattern": "^#"
     }
   ],
   "replacementPatterns": [],
