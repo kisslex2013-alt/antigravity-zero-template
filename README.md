@@ -130,6 +130,22 @@ cd YOUR_REPO
 # 4. Start coding with AI!
 ```
 
+### 🔄 Adapting for Existing Projects
+
+You can easily add this "AI Brain" to your existing project:
+
+1. **Copy Core Folders**:
+   - Copy `.antigravity/` and `.agent/` folders to your project root.
+   - Copy `templates/` folder if you want specification templates.
+
+2. **Customize Rules**:
+   - Edit `.antigravity/rules.md` to match your stack.
+   - Example: Replace "Next.js" with "Django" or "Vue".
+
+3. **Start Using**:
+   - Run `/context` to help AI understand your current code.
+   - Start using `/spec` for new features!
+
 ### 📁 Project Structure
 
 ```
@@ -314,6 +330,22 @@ cd YOUR_REPO
 
 # 4. Работайте с AI!
 ```
+
+### 🔄 Интеграция в существующий проект
+
+Вы легко можете добавить этот "мозг AI" в уже готовый проект:
+
+1. **Скопируйте папки**:
+   - `.antigravity/` и `.agent/` в корень вашего проекта.
+   - `templates/` если нужны шаблоны спецификаций.
+
+2. **Настройте правила**:
+   - Отредактируйте `.antigravity/rules.md` под свой стек.
+   - Пример: Замените "Next.js" на "Django" или "Vue".
+
+3. **Начните использовать**:
+   - Запустите `/context`, чтобы AI понял ваш текущий код.
+   - Используйте `/spec` для новых фич!
 
 ---
 
