@@ -1,7 +1,7 @@
 # 🛸 Antigravity Zero Template
 
-> **AI-первый шаблон для быстрого старта проектов**  
-> *v1.0 | Zero-coder friendly*
+>> **AI-первый шаблон для быстрого старта проектов**  
+> *v2.0 | Zero-coder friendly | Spec-first Workflow*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
@@ -53,17 +53,27 @@ graph LR
 
 | Feature | Description |
 |---------|-------------|
-| 🤖 **AI Brain** | `.antigravity/` — rules, 15 personas, skills |
-| 🔧 **Workflows** | `/spec` (interview), `/brainstorm` (ideation) |
-| 📄 **Artifacts** | Ready templates for tasks, plans, walkthroughs |
+| 🤖 **AI Brain** | `.antigravity/` — rules, **19 personas**, skills |
+| 🔧 **Workflows** | **8 workflows:** spec, draft, simplify, verify, pipeline, brainstorm, compare, context |
+| 🔄 **Spec-first** | Complete 4-phase development: Spec → Draft → Simplify → Verify |
+| 📄 **Templates** | Ready spec templates with examples for zero-coder |
 | 📜 **Automation** | `setup.ps1`, `verify.ps1` scripts |
 | 🔌 **MCP Ready** | Smart Coding MCP integration guide |
-| 🎯 **Zero-coder** | Simple language, structured responses |
+| 🎯 **Zero-coder** | Simple language, structured responses, step-by-step guides |
 
 ### 🎭 AI Personas
 
 Switch AI "personality" for different tasks:
 
+**Phase-Specific (Spec-first Workflow):**
+```
+📋 Spec Analyst        → Detailed requirements, asks questions
+⚡ Rapid Prototyper    → Fast working prototypes, speed > beauty
+🧹 Code Simplifier     → Clean code, refactoring, readability
+🔬 Test Engineer       → Automated tests, bug detection
+```
+
+**General Purpose:**
 ```
 🕵️ Debugger    → Thorough bug hunting, requires logs
 🏗️ Architect   → Scalable system design
@@ -73,8 +83,38 @@ Switch AI "personality" for different tasks:
 📝 Documenter  → Writes clear docs
 ⚡ Optimizer   → Performance tuning
 🧪 Tester      → Test-first approach
-...and 7 more!
+...and 11 more!
 ```
+
+### 🔄 Spec-first Workflow (NEW in v2.0)
+
+Complete 4-phase development cycle inspired by Boris Cherny's methodology:
+
+```
+Spec → Draft → Simplify → Verify
+ 📋      ⚡       🧹         🔬
+```
+
+**Quick Commands:**
+```bash
+/spec @idea.md          # Detailed specification through interview
+/draft @specs/file.md   # Fast working prototype
+/simplify @src/file.js  # Improve code quality
+/verify @src/file.js    # Automated testing
+/pipeline [feature]     # Complete cycle: all 4 phases automatically
+
+# Bonus workflows:
+/brainstorm [task]      # 3 solution variants
+/compare A vs B         # Compare approaches
+/context                # Show project status
+```
+
+**Benefits:**
+- 📋 **Better Planning** - Detailed specs reduce rework
+- ⚡ **Faster Prototyping** - Working code in minutes
+- 🧹 **Cleaner Code** - Mandatory refactoring phase  
+- 🔬 **Higher Quality** - Automated testing for every feature
+- 🎯 **Zero-coder Friendly** - Step-by-step with examples
 
 ### 🚀 Quick Start
 
@@ -93,24 +133,41 @@ cd YOUR_REPO
 ### 📁 Project Structure
 
 ```
-├── .agent/workflows/    # AI workflows (/spec, /brainstorm)
+├── .agent/workflows/    # AI workflows (8 workflows)
+│   ├── spec.md          # Specification interview
+│   ├── draft.md         # ⚡ NEW: Fast prototyping
+│   ├── simplify.md      # 🧹 NEW: Code refactoring
+│   ├── verify.md        # 🔬 NEW: Automated testing
+│   ├── pipeline.md      # 🔄 NEW: Full 4-phase cycle
+│   ├── brainstorm.md    # Creative ideation
+│   ├── compare.md       # 📊 NEW: Compare approaches  
+│   └── context.md       # 📍 NEW: Project status
 ├── .antigravity/        # 🧠 AI brain
 │   ├── rules.md         # Core rules & security
-│   ├── personas.md      # 15 AI personas
+│   ├── personas.md      # 19 AI personas (15 + 4 phase-specific)
 │   ├── skills/          # Extended capabilities
+│   │   ├── context-engineering.md
+│   │   ├── task-hierarchy.md
+│   │   └── phase-switching.md  # ✨ NEW: Auto persona switch
 │   └── docs/            # AI documentation
+├── templates/           # ✨ NEW: Specification templates
+│   ├── spec-template.md        # Zero-coder friendly template
+│   └── spec-example-like-button.md  # Filled example
 ├── artifacts/           # Session artifacts
 │   ├── task.md          # Current tasks
 │   ├── plan.md          # Implementation plan
 │   └── walkthrough.md   # Work report
 ├── scripts/             # Automation
+│   ├── setup.ps1
+│   └── verify.ps1
 ├── src/                 # Your code here!
-└── GUIDE.md             # Full usage guide
+└── GUIDE.md             # 📖 Full usage guide (updated with phases)
 ```
 
 ### 📖 Documentation
 
 - **[GUIDE.md](GUIDE.md)** — Complete usage guide (zero-coder friendly)
+- **[CHANGELOG.md](CHANGELOG.md)** — Version history and changes
 - **[ARCHITECTURE.md](ARCHITECTURE.md)** — System architecture
 - **[docs/mcp-setup.md](docs/mcp-setup.md)** — MCP server setup
 
@@ -158,17 +215,27 @@ graph LR
 
 | Фича | Описание |
 |------|----------|
-| 🤖 **AI Brain** | `.antigravity/` — правила, 15 персон, навыки |
-| 🔧 **Workflows** | `/spec` (интервью), `/brainstorm` (мозговой штурм) |
-| 📄 **Артефакты** | Шаблоны для задач, планов, отчётов |
+| 🤖 **AI Brain** | `.antigravity/` — правила, **19 персон**, навыки |
+| 🔧 **Workflows** | **8 workflows:** spec, draft, simplify, verify, pipeline, brainstorm, compare, context |
+| 🔄 **Spec-first** | Полный 4-фазный цикл: Spec → Draft → Simplify → Verify |
+| 📄 **Шаблоны** | Готовые шаблоны спецификаций с примерами для zero-coder |
 | 📜 **Автоматизация** | `setup.ps1`, `verify.ps1` скрипты |
 | 🔌 **MCP Ready** | Инструкция по Smart Coding MCP |
-| 🎯 **Zero-coder** | Простой язык, структурные ответы |
+| 🎯 **Zero-coder** | Простой язык, пошаговые руководства, примеры |
 
 ### 🎭 AI Персоны
 
 Переключайте "характер" AI для разных задач:
 
+**Фазовые персоны (Spec-first Workflow):**
+```
+📋 Spec Analyst        → Детальные требования, задаёт вопросы
+⚡ Rapid Prototyper    → Быстрые прототипы, скорость > красота
+🧹 Code Simplifier     → Чистый код, рефакторинг, читаемость
+🔬 Test Engineer       → Автоматические тесты, поиск багов
+```
+
+**Универсальные персоны:**
 ```
 🕵️ Debugger    → Дотошный поиск ошибок
 🏗️ Architect   → Масштабируемые системы  
@@ -178,8 +245,38 @@ graph LR
 📝 Documenter  → Понятная документация
 ⚡ Optimizer   → Оптимизация производительности
 🧪 Tester      → Test-first подход
-...и ещё 7 ролей!
+...и ещё 11 ролей!
 ```
+
+### 🔄 Spec-first Workflow (НОВОЕ в v2.0)
+
+Полный 4-фазный цикл разработки по методологии Boris Cherny:
+
+```
+Spec → Draft → Simplify → Verify
+ 📋      ⚡       🧹         🔬
+```
+
+**Быстрые команды:**
+```bash
+/spec @idea.md          # Детальная спецификация через интервью
+/draft @specs/file.md   # Быстрый рабочий прототип
+/simplify @src/file.js  # Улучшение качества кода
+/verify @src/file.js    # Автоматическое тестирование
+/pipeline [фича]        # Полный цикл: все 4 фазы автоматически
+
+# Бонусные workflows:
+/brainstorm [задача]    # 3 варианта решения
+/compare A vs B         # Сравнение подходов
+/context                # Текущее состояние проекта
+```
+
+**Преимущества:**
+- 📋 **Лучшее планирование** - Детальные спеки снижают переделки
+- ⚡ **Быстрое прототипирование** - Рабочий код за минуты
+- 🧹 **Чистый код** - Обязательная фаза рефакторинга
+- 🔬 **Высокое качество** - Автоматические тесты для каждой фичи
+- 🎯 **Zero-coder Friendly** - Пошаговые инструкции с примерами
 
 ### 🔧 Workflows
 
