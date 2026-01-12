@@ -1,6 +1,6 @@
 # 🛸 Antigravity Zero Template
 
->> **AI-первый шаблон для быстрого старта проектов**  
+&gt; **AI-первый шаблон для быстрого старта проектов**  
 > *v2.0 | Zero-coder friendly | Spec-first Workflow*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
