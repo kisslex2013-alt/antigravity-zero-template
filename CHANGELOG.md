@@ -101,6 +101,6 @@
 
 ## Ссылки
 
-- [Spec-first Workflow Methodology](https://substack.com/inbox/post/184202014) - Boris Cherny
 - [Repository](https://github.com/kisslex2013-alt/antigravity-zero-template)
 - [Issues](https://github.com/kisslex2013-alt/antigravity-zero-template/issues)
+- Inspired by Boris Cherny's "Beyond the Single Prompt: A Spec-first Workflow for AI Coding"
